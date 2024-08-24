@@ -68,7 +68,22 @@ header {
 .art-deco {
   color: #273aa1;
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 24px; /* Reduce font size */
+    margin-right: 5px; /* Reduce margin */
+  }
 
+  .logo p {
+    font-size: 14px; /* Reduce font size */
+    margin-top: -1px; /* Adjust margin top */
+  }
+
+  .art-deco {
+    font-size: 16px; /* Reduce font size */
+  }
+}
 nav {
   margin: 0;
   padding: 0;
