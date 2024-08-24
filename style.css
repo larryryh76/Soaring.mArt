@@ -204,10 +204,10 @@ nav a:active {
     font-size: 16px;
   }
   .hero h1 {
-    font-size: 20px;
+    font-size: 27px;
   }
   .hero p {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 768px) {
