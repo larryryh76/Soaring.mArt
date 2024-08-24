@@ -131,7 +131,7 @@ nav a:active {
 }
 @media only screen and (max-width: 768px) {
   .hero img {
-    height: 70vh !important;
+    height: 60vh !important;
     object-fit: none !important;
   }
 }
