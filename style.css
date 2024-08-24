@@ -10,6 +10,26 @@ body {
   background-image: linear-gradient(90deg, rgb(187, 187, 187), rgb(197, 197, 197));
 }
 
+@media only screen and (max-width: 768px) {
+  header {
+    height: 50px;
+    padding: 0.5em;
+  }
+  .logo h1 {
+    font-size: 24px;
+  }
+  .logo p {
+    font-size: 14px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
 /* Header Styles */
 
 header {
@@ -84,6 +104,7 @@ nav a:active {
 .hero {
   position: relative;
   height: 100vh;
+  
 }
 
 .hero img {
@@ -93,6 +114,13 @@ nav a:active {
   transition: opacity 0.5s ease;
   filter: blur(10px);
 }
+@media only screen and (max-width: 768px) {
+  .hero img {
+    height: 70vh !important;
+    object-fit: none !important;
+  }
+}
+
 
 .hero-text {
   position: absolute;
@@ -102,7 +130,35 @@ nav a:active {
   text-align: center;
   color: #0022ff;
   transition: transform 0.5s ease;
+  background: linear-gradient(100deg, rgba(0, 123, 255, 0.7) 0%, rgba(0, 255, 100, 0.7) 50%, rgba(200, 200, 200, 0.7) 100%)
+  ;
+
+ border-radius: 10px;
+  padding: 80px;
+  
 }
+@media only screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    transform: translate(-50%, -10%);
+    position: relative;
+    top: -120%;
+    max-width: 400px;
+    
+  }
+
+  .hero {
+    padding-bottom: 140px;
+  }
+  .hero-text {
+    margin-top: 10px;
+  }
+}
+
+
 
 .hero-text:hover {
   transform: translate(-50%, -50%) scale(1.1);
@@ -124,7 +180,38 @@ nav a:active {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero img {
+    filter: blur(5px);
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+}
+
+
+
+
+
 /* Steps Section Styles */
+.how-it-works {
+  margin-top: 70px;
+}
+
 
 .steps {
   display: flex;
@@ -142,6 +229,7 @@ nav a:active {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
+  transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .step h3 {
@@ -153,6 +241,33 @@ nav a:active {
 .step p {
   font-size: 18px;
   margin-bottom: 20px;
+}
+
+.step.active {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .how-it-works {
+    margin-top: 200px; /* reduced margin-top */
+    padding: 20px;
+  }
+  .steps {
+    flex-direction: column;
+    padding: 10px; /* reduced padding */
+  }
+  .step {
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 10px; /* reduced padding */
+  }
+  .step h3 {
+    font-size: 16px; /* reduced font-size */
+  }
+  .step p {
+    font-size: 12px; /* reduced font-size */
+  }
 }
 
 /* Footer Styles */
@@ -195,43 +310,29 @@ footer a:active {
   color: aqua;
 }
 
-/* Small Screen View */
 
-@media only screen and (max-width: 600px) {
-  header {
+@media only screen and (max-width: 768px) {
+  .footer-container {
     flex-direction: column;
-    align-items: center;
-  }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .hero {
-    height: 50vh;
-  }
-  .hero img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-  }
-  .steps {
-    flex-direction: column;
-    align-items: center;
-  }
-  .step {
-    margin-bottom: 20px;
-  }
-  footer {
     padding: 10px;
+  }
+  .footer-container p {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
   footer ul {
     flex-direction: column;
-    align-items: center;
   }
   footer li {
+    margin-right: 0;
     margin-bottom: 10px;
   }
+  footer a {
+    font-size: 14px;
+  }
 }
+
+
 
 /* Smooth Transitions */
 
@@ -258,8 +359,28 @@ nav a:hover {
 
 .step:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}/* About Page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+@media only screen and (max-width: 768px) {
+  /* Reduce hover effects on smaller screens */
+  header:hover {
+    background-color: #FFFFFF;
+    color: #333;
+  }
+  nav a:hover {
+    transform: none;
+  }
+  .hero img:hover {
+    filter: blur(5px);
+    transform: none;
+  }
+  .step:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* About Page */
 
 .about {
   background-color: rgb(190, 187, 187);
@@ -394,7 +515,40 @@ nav a:hover {
   }
 }
 
-
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 20px 0;
+  }
+  .about-content {
+    padding: 10px;
+  }
+  .about-content h1 {
+    font-size: 24px;
+  }
+  .about-content p {
+    font-size: 14px;
+  }
+  .about-content img {
+    max-width: 300px;
+  }
+  .about-content h2 {
+    font-size: 18px;
+  }
+  .about-content li {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 10px;
+  }
+  .about-content li i {
+    font-size: 18px;
+  }
+  .about-content li h3 {
+    font-size: 14px;
+  }
+  .about-content li p {
+    font-size: 12px;
+  }
+}
 
 .gallery {
   display: flex;
@@ -408,6 +562,19 @@ nav a:hover {
   margin: 10px;
   border-radius: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .gallery img {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery img {
+    width: 100%;
+    margin: 5px;
+  }
+}
+
 
 /* Contact Page */
 

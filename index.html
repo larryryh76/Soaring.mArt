@@ -6,6 +6,50 @@
     <title>Soaring Mart</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+
+
+.step {
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 15s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step h3, .step p {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #AAAAAA;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.step h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+    </style>
 </head>
 <body>
     <header class="header">
@@ -153,6 +197,28 @@
         </div>
     </footer>
 
+<script>
+// Add self-switching animation to steps
+document.querySelectorAll('.step').forEach((step, index) => {
+  let colorIndex = 0;
+  const colors = ['#2E865F', '#21295C'];
+  setInterval(() => {
+    step.style.backgroundColor = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+  }, 2000);
+});
+const header = document.querySelector('header');
 
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+});
+
+
+
+</script>
 </body>
 </html>
