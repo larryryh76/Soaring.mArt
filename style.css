@@ -193,9 +193,9 @@ nav a:active {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .hero {
-    height: 50vh;
+    height: 80vh;
     padding-bottom: 150px;
   }
   .hero img {
@@ -207,9 +207,9 @@ nav a:active {
   .hero-text {
     font-size: 24px;
     padding: 30px;
-    transform: translate(-50%, -30%);
-    top: -90%;
-    max-width: 500px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    max-width: 600px;
     text-align: center;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
