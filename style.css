@@ -195,7 +195,7 @@ nav a:active {
 @media only screen and (max-width: 1400px) {
 
    .hero img {
-    height: 100vh !important;
+    height: 120vh !important;
     object-fit: none !important;
   }
 
@@ -207,7 +207,7 @@ nav a:active {
     padding: 5px; /* Reduce padding */
     transform: translate(-50%, -10%);
     position: relative;
-    top: -70%; /* Adjust top position */
+    top: -60%; /* Adjust top position */
     max-width: 700px; /* Reduce max-width */
    }
   .hero {
