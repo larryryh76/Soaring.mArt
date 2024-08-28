@@ -198,7 +198,7 @@ nav a:active {
   }
   .hero img {
     filter: blur(5px);
-    height: 80vh;
+    height: 60vh;
     object-fit: cover;
   }
   .hero-text {
@@ -206,7 +206,7 @@ nav a:active {
     padding: 30px;
     transform: translate(-50%, -50%);
     top: 50%;
-    max-width: 500px;
+    max-width: 700px;
   }
   .hero h1 {
     font-size: 36px;
