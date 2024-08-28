@@ -193,29 +193,29 @@ nav a:active {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media only screen  (max-width: 1400px) {
-  .hero {
-    height: 40vh;
+ .hero {
+    height: 60vh;
   }
-  .hero img {
-    filter: blur(5px);
-    height: 50vh !important;
+   .hero img {
+    height: 60vh !important;
     object-fit: none !important;
   }
+
+
   .hero-text {
-    font-size: 22px;
-    padding: 30px;
-    transform: translate(-50%, -90%);
-    top: 50%;
-    max-width: 700px;
+    font-size: 18px;
+    padding: 20px;
+    transform: translate(-50%, -20%);
+    top: -80%;
+    max-width: 350px;
   }
   .hero h1 {
-    font-size: 29px;
+    font-size: 28px;
   }
   .hero p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .hero {
