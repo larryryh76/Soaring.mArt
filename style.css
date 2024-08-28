@@ -198,7 +198,7 @@ nav a:active {
   }
   .hero img {
     filter: blur(5px);
-    height: 80vh;
+    height: 40vh;
     object-fit: cover;
   }
   .hero-text {
