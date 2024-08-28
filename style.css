@@ -192,53 +192,6 @@ nav a:active {
   color: rgb(193, 193, 193);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-@media only screen and (max-width: 1400px) {
-
-   .hero img {
-    height: 120vh !important;
-    object-fit: none !important;
-  }
-
-
-  .hero-text {
-    font-size: 14px; /* Reduce font size */
-    font-weight: bold;
-    text-align: center;
-    padding: 5px; /* Reduce padding */
-    transform: translate(-50%, -10%);
-    position: relative;
-    top: -60%; /* Adjust top position */
-    max-width: 700px; /* Reduce max-width */
-   }
-  .hero {
-    padding-bottom: 120px;
-  }
-  .hero-text {
-    margin-top: 10px;
-  }
-}
-
-
-
-.hero-text:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.hero h1 {
-  font-size: 90px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero p {
-  font-size: 24px;
-  line-height: 1.5;
-  text-align: center;
-  color: rgb(193, 193, 193);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
 @media only screen and (max-width: 768px) {
   .hero {
