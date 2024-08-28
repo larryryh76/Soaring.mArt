@@ -193,9 +193,7 @@ nav a:active {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media only screen  (max-width: 1400px) {
- .hero {
-    height: 60vh;
-  }
+
    .hero img {
     height: 60vh !important;
     object-fit: none !important;
@@ -203,18 +201,43 @@ nav a:active {
 
 
   .hero-text {
-    font-size: 18px;
-    padding: 20px;
-    transform: translate(-50%, -20%);
-    top: -80%;
-    max-width: 350px;
+    font-size: 14px; /* Reduce font size */
+    font-weight: bold;
+    text-align: center;
+    padding: 5px; /* Reduce padding */
+    transform: translate(-50%, -10%);
+    position: relative;
+    top: -100%; /* Adjust top position */
+    max-width: 300px; /* Reduce max-width */
+   }
+  .hero {
+    padding-bottom: 120px;
   }
-  .hero h1 {
-    font-size: 28px;
+  .hero-text {
+    margin-top: 10px;
   }
-  .hero p {
-    font-size: 16px;
-  }
+}
+
+
+
+.hero-text:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.hero h1 {
+  font-size: 90px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(193, 193, 193);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 768px) {
