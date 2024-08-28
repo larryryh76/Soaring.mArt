@@ -8,6 +8,42 @@
 body {
   font-family: 'Playfair Display', serif;
   background-image: linear-gradient(90deg, rgb(187, 187, 187), rgb(197, 197, 197));
+  line-height: 1.5;
+}
+
+header {
+  height: 100px;
+  padding: 2em;
+}
+
+.logo h1 {
+  font-size: 50px;
+}
+
+.logo p {
+  font-size: 25px;
+}
+
+nav ul {
+  flex-direction: column;
+}
+
+nav li {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 70px;
+    padding: 1em;
+  }
+  .logo h1 {
+    font-size: 40px;
+  }
+  .logo p {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -21,14 +57,17 @@ body {
   .logo p {
     font-size: 17px;
   }
-  nav ul {
-    flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo h1 {
+    font-size: 28px;
   }
-  nav li {
-    margin-right: 0;
-    margin-bottom: 10px;
+  .logo p {
+    font-size: 14px;
   }
 }
+
 
 /* Header Styles */
 
