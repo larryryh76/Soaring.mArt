@@ -116,19 +116,26 @@ nav a:active {
 
 /* Hero Section Styles */
 
-
 .hero {
   position: relative;
   height: 100vh;
+  
 }
 
 .hero img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  transition: opacity 0.5s ease, filter 0.5s ease;
+  transition: opacity 0.5s ease;
   filter: blur(10px);
 }
+@media only screen and (max-width: 768px) {
+  .hero img {
+    height: 60vh !important;
+    object-fit: none !important;
+  }
+}
+
 
 .hero-text {
   position: absolute;
@@ -137,11 +144,34 @@ nav a:active {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #0022ff;
-  transition: transform 0.5s ease, font-size 0.5s ease;
-  background: linear-gradient(100deg, rgba(0, 123, 255, 0.7) 0%, rgba(0, 255, 100, 0.7) 50%, rgba(200, 200, 200, 0.7) 100%);
-  border-radius: 10px;
+  transition: transform 0.5s ease;
+  background: linear-gradient(100deg, rgba(0, 123, 255, 0.7) 0%, rgba(0, 255, 100, 0.7) 50%, rgba(200, 200, 200, 0.7) 100%)
+  ;
+
+ border-radius: 10px;
   padding: 80px;
+  
 }
+@media only screen and (max-width: 768px) {
+   .hero-text {
+    font-size: 14px; /* Reduce font size */
+    font-weight: bold;
+    text-align: center;
+    padding: 5px; /* Reduce padding */
+    transform: translate(-50%, -10%);
+    position: relative;
+    top: -100%; /* Adjust top position */
+    max-width: 300px; /* Reduce max-width */
+   }
+  .hero {
+    padding-bottom: 120px;
+  }
+  .hero-text {
+    margin-top: 10px;
+  }
+}
+
+
 
 .hero-text:hover {
   transform: translate(-50%, -50%) scale(1.1);
@@ -163,47 +193,15 @@ nav a:active {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 1200px) {
-  .hero-text {
-    font-size: 18px;
-  }
-  .hero h1 {
-    font-size: 60px;
-  }
-  .hero p {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .hero-text {
-    font-size: 16px;
-  }
-  .hero h1 {
-    font-size: 50px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .hero {
     height: 50vh;
   }
   .hero img {
     filter: blur(5px);
-    height: 60vh;
-    object-fit: none;
   }
   .hero-text {
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px;
-    transform: translate(-50%, -10%);
-    position: relative;
-    top: -100%;
-    max-width: 300px;
+    font-size: 16px;
   }
   .hero h1 {
     font-size: 22px;
@@ -212,19 +210,11 @@ nav a:active {
     font-size: 12px;
   }
 }
-
-@media only screen and (max-width: 576px) {
-  .hero-text {
-    font-size: 12px;
-  }
-  .hero h1 {
-    font-size: 18px;
-  }
-  .hero p {
-    font-size: 10px;
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 50vh;
   }
 }
-
 
 /* Steps Section Styles */
 .how-it-works {
