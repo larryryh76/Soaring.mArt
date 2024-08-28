@@ -204,7 +204,7 @@ nav a:active {
   .hero-text {
     font-size: 22px;
     padding: 30px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -90%);
     top: 50%;
     max-width: 500px;
   }
