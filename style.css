@@ -67,7 +67,22 @@ header {
 .art-deco {
   color: #273aa1;
 }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 24px; /* Reduce font size */
+    margin-right: 5px; /* Reduce margin */
+  }
 
+  .logo p {
+    font-size: 14px; /* Reduce font size */
+    margin-top: -1px; /* Adjust margin top */
+  }
+
+  .art-deco {
+    font-size: 16px; /* Reduce font size */
+  }
+}
 nav {
   margin: 0;
   padding: 0;
@@ -96,46 +111,6 @@ nav a:hover {
 
 nav a:active {
   color: #7ecfd8;
-}
-
-@media only screen and (max-width: 1024px) {
-  header {
-    height: 70px;
-    padding: 1em;
-  }
-  .logo h1 {
-    font-size: 40px;
-  }
-  .logo p {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  header {
-    height: 50px;
-    padding: 0.5em;
-  }
-  .logo h1 {
-    font-size: 24px;
-    margin-right: 5px;
-  }
-  .logo p {
-    font-size: 14px;
-    margin-top: -1px;
-  }
-  .art-deco {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .logo h1 {
-    font-size: 20px;
-  }
-  .logo p {
-    font-size: 12px;
-  }
 }
 
 
