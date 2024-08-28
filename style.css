@@ -193,23 +193,38 @@ nav a:active {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hero {
-    height: 50vh;
+    height: 80vh;
+    padding-bottom: 150px;
   }
   .hero img {
     filter: blur(5px);
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 20px;
   }
   .hero-text {
-    font-size: 16px;
+    font-size: 24px;
+    padding: 30px;
+    transform: translate(-50%, -30%);
+    top: -90%;
+    max-width: 500px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
   }
   .hero h1 {
-    font-size: 22px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
   .hero p {
-    font-size: 12px;
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }
+
 
 @media only screen and (max-width: 768px) {
   .hero {
