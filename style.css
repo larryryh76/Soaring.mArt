@@ -161,7 +161,7 @@ nav a:active {
     transform: translate(-50%, -10%);
     position: relative;
     top: -100%; /* Adjust top position */
-    max-width: 300px; /* Reduce max-width */
+    max-width: 100px; /* Reduce max-width */
    }
   .hero {
     padding-bottom: 120px;
