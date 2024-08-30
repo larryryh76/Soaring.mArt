@@ -115,7 +115,6 @@ nav a:active {
 
 
 /* Hero Section Styles */
-
 .hero {
   position: relative;
   height: 100vh;
@@ -149,7 +148,7 @@ nav a:active {
   ;
 
  border-radius: 10px;
-  padding: 50px;
+  padding: 80px;
   
 }
 @media only screen and (max-width: 768px) {
@@ -161,7 +160,7 @@ nav a:active {
     transform: translate(-50%, -10%);
     position: relative;
     top: -100%; /* Adjust top position */
-    max-width: 100px; /* Reduce max-width */
+    max-width: 300px; /* Reduce max-width */
    }
   .hero {
     padding-bottom: 120px;
@@ -247,13 +246,15 @@ nav a:active {
     font-size: 16px;
   }
 }
-/* Small screens (phones) */
 
 @media only screen and (max-width: 768px) {
   .hero {
     height: 50vh;
   }
 }
+
+
+
 
 /* Steps Section Styles */
 .how-it-works {
