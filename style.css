@@ -248,23 +248,7 @@ nav a:active {
   }
 }
 /* Small screens (phones) */
-@media only screen and (max-width: 480px) {
-  .hero {
-    height: 50vh;
-  }
-  .hero img {
-    height: 50vh;
-  }
-  .hero-text {
-    padding: 20px;
-  }
-  .hero h1 {
-    font-size: 40px;
-  }
-  .hero p {
-    font-size: 18px;
-  }
-}
+
 @media only screen and (max-width: 768px) {
   .hero {
     height: 50vh;
