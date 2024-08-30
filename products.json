@@ -1,0 +1,64 @@
+[
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 19.99,
+      "category": "groceries",
+      "image": "product1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 9.99,
+      "category": "groceries",
+      "image": "product2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": 29.99,
+      "category": "electronics",
+      "image": "product3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "TUBE CREAM",
+        "price": 29.99,
+        "category": "electronics",
+        "image": "product3.jpg"
+      },
+
+      {
+        "id": 5,
+        "name": "STARCH CORN",
+        "price": 29.99,
+        "category": "electronics",
+        "image": "product3.jpg"
+      },
+
+      {
+        "id": 6,
+        "name": "LOLLIPOP",
+        "price": 29.99,
+        "category": "electronics",
+        "image": "product3.jpg"
+      },
+      {
+        "id": 7,
+        "name": "MR V TABLE WATER",
+        "price": 29.99,
+        "category": "electronics",
+        "image": "product3.jpg"
+      },
+
+
+      {
+        "id": 8,
+        "name": "GROUDNUT SMALL",
+        "price": 29.99,
+        "category": "electronics",
+        "image": "product3.jpg"
+      }
+  ]
+  
+  
