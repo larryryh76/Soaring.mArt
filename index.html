@@ -85,35 +85,56 @@ margin-left: 10px;
 .animated-button i {
   margin-right: 10px;
 }
-
-@media only screen and (min-width: 320px) {
-  .animated-button {
-    padding: 10px 20px;
-    font-size: 14px;
+/* Small screens (phones) */
+@media only screen and (max-width: 480px) {
+  .hero {
+    height: 50vh;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .animated-button {
-    padding: 15px 30px;
-    font-size: 16px;
-
+  .hero img {
+    height: 50vh;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-  .animated-button {
-    padding: 20px 40px;
+  .hero-text {
+    padding: 20px;
+    left: 20%;
+    transform: translate(-20%, -50%);
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero p {
     font-size: 18px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .animated-button {
-    padding: 25px 50px;
+/* Medium screens (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero img {
+    height: 70vh;
+  }
+  .hero-text {
+    padding: 30px;
+  }
+  .hero h1 {
+    font-size: 60px;
+  }
+  .hero p {
     font-size: 20px;
   }
 }
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  /* No changes */
+}
+
+/* Extra large screens (large desktops) */
+@media only screen and (min-width: 1201px) {
+  /* No changes */
+}
+
     </style>
 </head>
 <body>
